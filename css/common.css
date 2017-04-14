@@ -1,0 +1,433 @@
+*{
+    margin:0;
+    background:#fff;
+    font-family: "microsoft yahei";
+    font-size:12px;
+    line-height: 24px;
+    color:#333;
+}
+ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,input,button{
+    margin:0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    color:#333;
+    text-decoration:none;
+}
+a:hover{
+    color:#f60;
+    text-decoration:none;
+}
+/*****header*******/
+#resume{
+    width:100%;
+    height: 50px;
+    background: #ccc;
+}
+#res1 {
+    float: left;
+    width: 30%;
+    height: 50px;
+    background: #ccc;
+}
+#res1>p{
+    float: left;
+    margin-left: 50px;
+    background: #ccc;
+    height: 43px;
+}
+#res1>p>a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../image/df2.jpg) no-repeat;
+    border-radius: 50%;
+}
+#res1>p:hover a{
+    background: url(../image/df1.jpg) no-repeat;
+    border-radius: 50%;
+}
+#res1>ul{
+    float: left;
+    margin-left: 30px;
+}
+#res1>ul>li{
+    background: #ccc;
+    font-size: 14px;
+}
+#res1>ul>li:nth-child(2){
+    border-bottom: 1px solid #333333;
+}
+#res2{
+    margin-right: 50px;
+    float: right;
+}
+#res2>li{
+    float: right;
+    height: 38px;
+    padding-top: 12px;
+    width:60px;
+    background: #ccc;
+    text-align: center;
+
+}
+#res2>li>a{
+    font-size: 14px;
+    background: #ccc;
+}
+#res2>li>b{
+    display:inline-block;
+    width: 0;
+    height: 10px;
+    margin-left: 10px;
+    border-right: 1px solid #333;
+}
+#res2>li:first-child>b{
+    border:0;
+}
+/********简介**********/
+#intro{
+    width: 980px;
+    height: 520px;
+    margin:0 auto;
+}
+.head{
+    margin:0 auto;
+    text-align: center;
+    padding-top: 90px;
+}
+.head>img{
+    border-radius: 50%;
+}
+.head1>h1{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+    padding-bottom: 15px;
+}
+.head1>p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+/***个人信息****/
+#message,#skill,#product{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 980px;
+    text-align: center;
+}
+.mg1,.skl1,.prt{
+    height: 70px;
+    width: 200px;
+    margin: 0 auto;
+    font-size:25px;
+    padding-top: 30px;
+}
+.mg1>a{
+    display: block;
+    width: 80px;
+    border-bottom: 2px solid #333;
+    margin: 0 auto;
+    margin-top: 5px;
+    display: none;
+}
+.mg1:hover a,.skl1:hover a,.prt:hover b{
+    display:block;
+}
+.mg2{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.mg2>li{
+    float: left;
+    width: 200px;
+    height: 180px;
+    text-align: center;
+}
+.mg2>li>img{
+    margin-top: 20px;
+}
+.mg2>li>div>p{
+    width: 56px;
+    height: 24px;
+    text-align: center;
+    margin-top: 2px;
+    font-size: 14px;
+}
+.mg2>li>div{
+    width: 56px;
+    height: 56px;
+    margin: 0 auto;
+    padding: 14px;
+}
+.mg2>li:hover div{
+    border:2px solid #333;
+    border-radius:50%;
+    z-index: 100;
+    margin-top: 20px;
+}
+.mg2>li:hover img{
+    margin-top: 0;
+}
+.mg2:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.mg3>p{
+    font-size: 14px;
+    margin: 20px 0;
+}
+/*职业技能*/
+.skl1>a,.prt>b{
+    display: block;
+    width: 100px;
+    border-bottom: 2px solid #333;
+    margin: 0 auto;
+    margin-top: 5px;
+    display: none;
+}
+.lt{
+    float: left;
+}
+.lt>table tr>td{
+    text-align: left;
+    width: 490px;
+}
+.lt>table tr>td:first-child{
+    width: 75px;
+}
+.lt>table tr>td:last-child{
+    width: 350px;
+    border-right: 2px solid #f04;
+
+}
+.lt>table tr>td>div{
+    height: 25px;
+    border-radius: 5px;
+    text-align: right;
+}
+.h5{
+    width: 85%;
+    background: #0f0;
+}
+.c3{
+    width: 85%;
+    background: #ff0;
+}
+.js{
+    width: 80%;
+    background: #0ff;
+}
+.jq{
+    width: 75%;
+    background: #CC00FF;
+}
+.rct{
+    width: 60%;
+    background: #ce1c1f;
+}
+.bsp{
+    width: 70%;
+    background: #000;
+}
+.ph{
+    width: 45%;
+    background: #00f;
+}
+.rt{
+    float: right;
+    width: 490px;
+}
+.rt>p{
+    padding-left: 70px;
+    text-align: left;
+}
+#skill:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+/*个人作品*/
+#product{
+    position: relative;
+    width: 980px;
+    height: 520px;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    margin:10px auto;
+}
+#product .pro {
+    position: relative;
+    width: 100%;
+    height: 440px;
+    overflow: hidden;
+    border: 1px solid #fff;
+}
+#product .pro div {
+    position: absolute;
+    top: 0;
+    left:0 ;
+    width: 980px;
+    height:440px;
+    transition: opacity .5s linear;
+    opacity:0;
+}
+#product .pro div.current {
+    opacity:1;
+
+}
+#product .pro div div{
+    position: absolute;
+    top: 60px;
+    left:0 ;
+    height: 360px;
+}
+#product .count {
+    position: absolute;
+    right: 430px;
+    bottom: 0;
+    background: #fff;
+}
+#product .count li {
+    color: #fff;
+    float: left;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    overflow: hidden;
+    background: #333;
+    opacity:1;
+    border-radius: 5px;
+}
+#product .count li.current {
+    color: #fff;
+    opacity: 1;
+    font-weight:bold ;
+    background:#0000ff ;
+}
+.pro>div>p>img{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.pro>div>p>img:hover{
+    transform:scale(1.4);
+}
+.pro>div>h3>a{
+    font-size: 17px;
+    color: #f60;
+}
+/*履历*/
+#record{
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+.red,.pho{
+    height: 70px;
+    width: 200px;
+    margin: 0 auto;
+    font-size:25px;
+    padding-top: 30px;
+    text-align: center;
+}
+.red>b,.pho>b{
+    display: block;
+    width: 100px;
+    border-bottom: 2px solid #333;
+    margin: 0 auto;
+    margin-top: 5px;
+    display: none;
+}
+.red:hover b,.pho:hover b{
+    display:block;
+}
+.red1>p{
+    margin: 10px 0;
+}
+.red2{
+    border: 1px solid #fff;
+    margin-top:40px;
+    background: #ccc;
+    height: 180px;
+}
+.red2>div{
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin-left: 30px;
+    background: #ccc;
+}
+.red2>div>h1,.red2>div>span{
+    background: #ccc;
+}
+.red2>p{
+    float: right;
+    margin-right: 30px;
+}
+/*联系我*/
+#phone{
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    height: 400px;
+}
+.pho1{
+    text-align: center;
+    height: 70px;
+}
+.pho1>a{
+    display: none;
+}
+.pho1:hover a{
+    display: block;
+    color: #f60;
+}
+#phone>p{
+    text-align: center;
+    margin: 40px 0;
+}
+#phone>p>a{
+    font-size: 25px;
+    color: #f00;
+}
+.pho2{
+    width: 163px;
+    margin:0 auto;
+}
+.pho2>a{
+    float: left;
+    width: 40px;
+    line-height: 12px;
+    display: inline-block;
+    border-right: 1px solid #ccc;
+}
+.pho2>a:last-child{
+    border: 0;
+}
+.anchor{
+    height: 60px;
+    width: 10px;
+    position:fixed;
+    top: 50%;
+    right: 20px;
+
+}
+.anchor>ul>li>a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background: #ccc;
+}
+.anchor>ul>li:hover a{
+    background: #00f;
+}
