@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/common.css"/>
     <script src="js/angular.js"></script>
 </head>
-<body>
-   <header class="header">
+<body id="bd">
+    <header class="header">
        <div id="resume">
            <div id="res1">
                <p><a></a></p>
@@ -29,7 +29,7 @@
        </div>
    </header>
     <!--个人简介-->
-    <div id="intro">
+    <div id="intro" class="curt" >
         <div class="head">
             <img src="image/df.jpg" alt=""/>
         </div>
@@ -43,7 +43,7 @@
         </div>
     </div>
    <!-- 个人信息-->
-    <div id="message">
+    <div id="message" >
         <h1 class="mg1">
             关于我
             <a></a>
@@ -79,10 +79,10 @@
             </li>
         </ul>
         <div class="mg3">
-            <p>2015年7月毕业于周口科技大学，就职于河南宁佳科技有限公司(已离职)</p>
-            <p>工作之余接触到web前端技术，自己深深地被其所吸引</p>
-            <p>前端技术的发展百花齐放、日新月异，技能点点的我既兴奋又激动</p>
-            <p>精美的特效，漂亮的代码让我经常感叹，这也太牛逼了！</p>
+            <p>本人毕业于中国人民大学，就职于河南宁佳科技有限公司(已离职)</p>
+            <p>基于对web前端的浓厚的兴趣以及工作中接触应用web前端技术，使自身能力和技术进一步提高</p>
+            <p>随着移动终端和移动网络的更新升级，web前端新技术的层出不穷与卓越发展让我对我的专业充满了自信！</p>
+            <p>利用自身所掌握的专业知识及技术制作出的富有精美特效和优质体验的作品，让我深感自豪！</p>
         </div>
     </div>
     <!-- 职业技能-->
@@ -157,48 +157,48 @@
         </h1>
         <div class="pro">
             <div class="prt1 current">
-                <h3><a href="product.html" target="_blank" title="点击跳转">原生js作品集</a></h3>
-                <p>原生js作品，练习demo,部分使用js实现一遍</p>
+                <h3><a href="https://liu111222.github.io/" target="_blank" title="点击跳转">Blog</a></h3>
+                <p>个人简历</p>
                 <p class="demo1">
                     <img src="image/pro1.jpg" alt=""/>
                 </p>
             </div>
             <div class="prt2 ">
-                <h3><a href="" title="点击进入">个人练习<b>(地址)</b></a></h3>
+                <h3><a href="product.html" target="_blank" title="点击进入">作品集<b>(地址)</b></a></h3>
                 <p>原生js作品，练习demo,部分使用js实现一遍</p>
                 <p class="demo2">
                     <img src="image/pro2.jpg" alt=""/>
                 </p>
             </div>
             <div class="prt3">
-                <h3><a href="" title="点击进入">微博<b>(地址)</b></a></h3>
-                <p>原生js作品，练习demo,部分使用js实现一遍</p>
+                <h3><a href="https://github.com/liu111222" title="点击进入">GitHub>(地址)</b></a></h3>
+                <p></p>
                 <p class="demo3">
                     <img src="image/pro3.jpg" alt=""/>
                 </p>
             </div>
             <div class="prt4">
-                <h3><a href="#" title="点击进入">原生js作品集 <b>(地址)</b></a></h3>
-                <p>原生js作品，练习demo,部分使用js实现一遍</p>
+                <h3><a href="1index.html" title="点击进入三线游">仿三线游首页<b>(地址)</b></a></h3>
+                <p>个人项目实现</p>
                 <p class="demo4">
                     <img src="image/pro4.jpg" alt=""/>
                 </p>
             </div>
             <div class="prt5 ">
-                <h3><a href="1index.html" target="_blank" title="点击进入三线游">仿三线游首页<b>(地址)</b></a></h3>
-                <p>应用原生js,jQuery,h5,css3开发，独立完成网站前端页面布局及动态特效的实现</p>
+                <h3><a href="" target="_blank">自勉</a></h3>
+                <p></p>
                 <p class="demo5">
                     <img src="image/pro5.jpg" alt=""/>
                 </p>
             </div>
+            <ul class="count">
+                <li class="current"></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+            </ul>
         </div>
-        <ul class="count">
-            <li class="current"></li>
-            <li class=""></li>
-            <li class=""></li>
-            <li class=""></li>
-            <li class=""></li>
-        </ul>
     </div>
    <!-- 履历-->
    <div id="record">
@@ -206,8 +206,8 @@
            <b></b>
        </h1>
        <div class="red1">
-           <p>工作之余开始自学前端开发</p>
-           <p>深深地被前端技术所吸引,从此走上了一条噼里啪啦敲代码之路</p>
+           <p>初始对网页特效和质感的吸引</p>
+           <p>深入了解web前端技术,接触后对web前端产生的兴趣，使我走上了专注热爱web前端开发之路</p>
        </div>
        <div class="red2">
            <div>
@@ -219,36 +219,43 @@
            </div>
            <p><img src="image/rd.jpg" alt=""/></p>
        </div>
-       <!-- 联系我-->
-       <div id="phone">
-           <h1 class="pho">联系 我
-               <b></b>
-           </h1>
-           <div class="pho1">
-               <span>经过一段时间在互联网技术领域的探索</span>
-               <p>我决心在未来的职业生涯中专注于--网站前端技术与网站交互用户体验相关的工作</p>
-               <a>热爱前端、专注前端！</a>
-           </div>
-           <p><a href="JL/刘德峰.doc" target="_blank">下载简历</a></p>
-           <div class="pho2">
-               <a href="#">githib</a>
-               <a href="#">博客</a>
-               <a href="#">微博</a>
-               <a href="#">知乎</a>
-           </div>
-       </div>
    </div>
+    <!-- 联系我-->
+    <div id="phone">
+        <h1 class="pho">联 系 我
+            <b></b>
+        </h1>
+        <div class="pho1">
+            <span>经过一段时间在互联网技术领域的探索及实践</span>
+            <p>我决心在未来的职业生涯中更专注于--网站前端技术与网站交互用户体验相关的工作</p>
+            <a>因为热爱、所以专注！</a>
+        </div>
+        <p><a href="JL/刘德峰.doc" target="_blank">下载简历</a></p>
+        <div class="pho2">
+            <a href="#">githib</a>
+            <a href="#">博客</a>
+            <a href="#">微博</a>
+            <a href="#">知乎</a>
+        </div>
+    </div>
+    <!-- 侧边锚点-->
    <div class="anchor">
        <ul>
-           <li class="current"><a href="#intro"></a></li>
-           <li><a href="#message"></a></li>
-           <li><a href="#skill"></a></li>
-           <li><a href="#product"></a></li>
-           <li><a href="#record"></a></li>
-           <li><a href="#phone"></a></li>
+           <li>
+               <a></a>
+           </li>
+           <li><a></a></li>
+           <li class="curt1">
+               <a></a>
+           </li>
+           <li><a></a></li>
+           <li><a></a></li>
+           <li><a></a></li>
        </ul>
    </div>
    <script src="js/jquery-1.11.3.js"></script>
-   <script src="js/index.js"></script>
+
+   <script src="js/index1.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

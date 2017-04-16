@@ -1,6 +1,22 @@
 /**
  * Created by Super on 2017/4/13.
  */
+ //满屏轮播
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //技能
 var skill=document.getElementById("skill");
 var d1=skill.getElementsByTagName("div")[1];
@@ -121,7 +137,7 @@ for(i=0;i<li.length;i++){
         clearInterval(play);
     }
 }
-//�Զ��ֲ�
+//自动播放
 function autoPlay(){
     play=setInterval(function(){
         index++;
