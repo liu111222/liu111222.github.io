@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            margin:0 auto;
+            width: 80%;
+            background:#eee;
+            font-family: "microsoft yahei";
+            font-size:12px;
+            color:#333;
+        }
+        #d1{
+            width: 412px;
+            height: 564px;
+            position: relative;
+
+        }
+        .pic{
+            width: 100%;
+            height: 100%;
+
+        }
+        #d1>.txt {
+            width:100%;
+            height: 264px;
+            position: absolute;
+            top: 300px;
+            background: #fff;
+        }
+       #d1>a {
+           text-decoration: none;
+           width: 412px;
+           height: 564px;
+           background: #caf;
+           position: absolute;
+           top: 0;
+           display: none;
+       }
+        #d1:hover .txt{
+            display: none;
+        }
+        #d1:hover a{
+            opacity:0.7;
+            display: block;
+            cursor:pointer ;
+        }
+       #d1>a>div{
+           width: 80%;
+           height: 80%;
+           position:absolute;
+           top:10%;
+           left: 10%;
+       }
+       #d1>a:before,#d1>a:after{
+           position: absolute;
+           display:block;
+           content: '';
+           transition:all 0.6s;
+       }
+       #d1>a:before{
+           top:10%;
+           left:10%;
+           width: 0;
+           height:0;
+           border-top: 1px solid #fff;
+           border-left: 1px solid #fff;
+           transition-delay: 0.1s;
+       }
+        #d1>a:after{
+            bottom:10%;
+            right:10%;
+            width: 0;
+            height:0;
+            border-bottom: 1px solid #fff;
+            border-right: 1px solid #fff;
+            transition-delay: 0.1s;
+        }
+        /*#d1>a>div:after,#d1>a>div:before{*/
+            /*position: absolute;*/
+            /*display:block;*/
+            /*content: '';*/
+            /*transition:all 0.6s;*/
+        /*}*/
+        /*#d1>a>div:before{*/
+            /*top:0;*/
+            /*left: 0;*/
+            /*width: 0;*/
+            /*height:0;*/
+            /*border-left: 1px solid #fff;*/
+            /*transition-delay: 0.1s;*/
+        /*}*/
+        /*#d1>a>div:after{*/
+            /*bottom:0;*/
+            /*right:0;*/
+            /*width: 0;*/
+            /*height:0;*/
+            /*border-left: 1px solid #fff;*/
+            /*transition-delay: 0.1s;*/
+        /*}*/
+        #d1>a:hover:before,#d1>a:hover:after{
+            width:79.7%;
+            height: 79.7%;
+        }
+        #d1>a:hover a:before,#d1>a:hover a:after{
+            transition-delay: 0.1s;
+        }
+        /*#d1>a:hover div:before,#d1>a:hover div:after{*/
+            /*height: 100%;*/
+        /*}*/
+        /*#d1>a:hover a:before,#d1>a:hover a:after,*/
+        /*#d1>a:hover div:before,#d1>a:hover div:after{*/
+            /*transition-delay: 0.1s;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <div id="d1">
+        <div class="pic">
+            <img src="../image/1.png" alt=""/>
+        </div>
+        <div class="txt">
+            <p><b>网拍天下</b><span>招募中</span></p>
+            <p>¥<span>6000</span></p>
+            <p>发稿-互联网媒体<b>18</b><span>人报名</span></p>
+            <ul>
+                <li>行业：科技互联网</li>
+                <li>完成时间：2017-4-10</li>
+            </ul>
+        </div>
+        <a>
+            <div>网拍天下</div>
+        </a>
+    </div>
+</body>
+</html>

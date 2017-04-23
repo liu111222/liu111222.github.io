@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            text-align: right;
+            background: #CC00FF;
+        }
+        #box{
+            width: 1000px;
+            height: 100%;
+            padding-top: 20px;
+        }
+        ul{
+            list-style: none;
+            width: 100%;
+            height: 35px;
+        }
+        ul>li{
+            float: right;
+            width: 70px;
+            height: 30px;
+            background: #fdcf17;
+            margin-top: 10px;
+            padding-top: 5px;
+            text-align: center;
+            border: 1px solid #fff;
+            border-left:0;
+        }
+        ul>li:last-child{
+            border-left: 1px solid #fff;
+        }
+        ul:hover li{
+            margin-left: 2px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            background:#fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="d1">
+            <input type="button" value="红色"/>
+            <input type="button" value="绿色"/>
+            <input type="button" value="蓝色"/>
+        </div>
+        <ul id="d2">
+            <li>7</li>
+            <li>6</li>
+            <li>5</li>
+            <li>4</li>
+            <li>3</li>
+            <li>2</li>
+            <li>1</li>
+        </ul>
+    </div>
+    <script>
+        var input=document.getElementById("d1").getElementsByTagName("input");
+        var li=document.getElementById("d2").getElementsByTagName("li");
+        var body=document.querySelector("body");
+        console.log(input,li,body);
+        for(var i=0;i<input.length;i++){
+            if(input[i].value=="红色"){
+                input[i].style.background="#f00";
+                input[i].onclick=function(){
+                    body.style.background="#f00";
+                    for(var a=0;a<li.length;a++){
+                        li[a].style.background="#f00";
+                    }
+                }
+            }else if(input[i].value=="绿色"){
+                input[i].style.background="#0f0";
+                input[i].onclick=function(){
+                    body.style.background="#0f0";
+                    for(var a=0;a<li.length;a++){
+                        li[a].style.background="#0f0";
+                    }
+                }
+            }else if(input[i].value=="蓝色"){
+                input[i].style.background="#00f";
+                input[i].onclick=function(){
+                    body.style.background="#00f";
+                    for(var a=0;a<li.length;a++){
+                        li[a].style.background="#00f";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
