@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*声明动画*/
+			@keyframes change{
+				0%{
+					width:100px;
+					height:100px;
+					background:red;
+				}
+				100%{
+					border-radius:50%;
+					background:blue;
+					margin-left:300px;
+				}
+			}
+			#d1{
+				width:100px;
+				height:100px;
+				background:green;
+				animation-name:change;
+				animation-duration:3s;
+				animation-timing-function:linear;
+				/*animation-delay:5s;*/
+				animation-iteration-count:infinite;
+				animation-direction:alternate;
+				animation-fill-mode:both;
+
+			}
+			#d1:hover{
+				animation-play-state:paused;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d1"></div>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+ </head>
+ <body>
+	<script type="text/javascript">
+		function guess(){
+			//生成一个随机数
+			var r=parseInt(Math.random()*100);
+			/*console.log(r);*/
+			/*1、循环外*/
+			//1.1生成随机数
+			/*2、循环内*/
+			//2.1循环条件:exit while(true){break;}
+			//2.2循环操作
+			//1输入数字
+			//2判断数据是否为exit，是否退出
+			//3比较大小，给出提示
+			//4如果猜对了，提示正确并退出循环
+			/*while(true){
+				var input=prompt("请输入一个数字,exit为退出");
+				//判断是否退出
+				if(input=="exit"){
+					break;
+				}
+				//比较大小
+				if(input>r){
+					alert("你输入大了，请重新输入");
+				}else if(input<r){
+					alert("你输入小了，请重新输入");
+				}else{
+					alert("恭喜你答对了");
+					break;
+				}
+			}*/
+			do{
+				var input=prompt("请输入一个数字,exit为退出");
+				if(input=="exit"){
+					alert("退出程序");
+				}else if(input>r){
+                                    m				}else if(input<r){
+					alert("你输入小了，请重新输入");
+				}else{
+					alert("恭喜您！猜对了");
+					break;
+				}
+			}while(input!="exit" && input!=r);
+			alert("程序结束!!!")
+		}
+	</script>
+	<button onclick="guess();">猜数字</button>
+ </body>

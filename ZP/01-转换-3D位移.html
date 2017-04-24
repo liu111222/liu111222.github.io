@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#parent{
+				width:400px;
+				height:300px;
+				border:1px solid #333;
+				position:absolute;
+				left:300px;
+				top:150px;
+				
+				perspective:1000px;
+				-webkit-perspective:1000px;
+
+				/*x轴的旋转*/
+				transform:rotatex(-30deg);
+				/*转换为3D元素*/
+				transform-style:preserve-3d;
+			}
+
+			#son1,#son2,#son3{
+				width:100px;
+				height:100px;
+				position:absolute;
+				left:150px;
+				top:100px;
+			}
+			#son1{
+				background:red;
+				transform:translatez(-50px);
+			}
+			#son2{
+				background:green;
+				transform:translatez(0px);
+			}
+			#son3{
+				background:blue;
+				transform:translatez(50px);
+			}
+			body{
+				perspective:1000px;
+				-webkit-perspective:1000px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="parent">
+			<div id="son1">第一个元素</div>
+			<div id="son2">第二个元素</div>
+			<div id="son3">第三个元素</div>
+		</div>
+	</body>
+</html>

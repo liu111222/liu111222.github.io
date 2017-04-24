@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <h3>定制错误提示消息</h3>
+
+  <form action="">
+    登录名称：<input name="uname" id="uname" required/><br/>
+    登录密码：<input name="upwd" id="upwd"/><br/>
+    用户年龄：<input type="number"name="age" id="age"min="18" max="35"/><br/>
+    <input type="submit"/>
+  </form>
+  <script>
+    //uname.onkeyup=function(){}
+    uname.onblur=function(){
+      if(this.validity.valueMissing){
+        var msg='登录用户名不能为空';
+        alert(msg);
+        this.setCustomValidity(msg);
+      }
+    }
+
+
+  </script>
+</body>
+</html>

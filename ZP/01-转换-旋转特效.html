@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width:200px;
+				height:200px;
+
+				position:absolute;
+				left:400px;
+				top:200px;
+
+				transform-origin:0px 0px;
+			}
+
+			#d1{
+				background:red;
+			}
+			#d2{
+				background:blue;
+				transform:rotate(15deg);
+			}
+			#d3{
+				background:green;
+				transform:rotate(30deg);
+			}
+			#d4{
+				background:orange;
+				transform:rotate(45deg);
+			}
+			#d5{
+				background:yellow;
+				transform:rotate(60deg);
+			}
+			#d6{
+				background:purple;
+				transform:rotate(75deg);
+			}
+			div:hover{
+				z-index:100;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d1"></div>	
+		<div id="d2"></div>	
+		<div id="d3"></div>	
+		<div id="d4"></div>	
+		<div id="d5"></div>	
+		<div id="d6"></div>	
+	</body>
+</html>

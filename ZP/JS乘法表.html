@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+ </head>
+ <body>
+	<script type="text/javascript">
+		/*1*3=3 2*3=6 3*3=9*/
+		function printMulti(){
+			//1.请输入一个数字
+			var num=Number(prompt("请输入一个数字"));
+			//2.循环
+				//2.1条件：从1开始，到num结束
+				//2.2操作：条件变量*num=条件变量*num
+				var msg="";
+			/*for(var a=1;a<=9;a++){
+				if(a<=num){
+					console.log(a+"*"+num+"="+(a*num));
+				}
+			}*/
+			for(var a=1;a<=num;a++){
+				msg+=(a+"*"+num+"="+(a*num))+"\t";
+			}
+			console.log(msg);
+			document.write(msg);
+		}
+
+		/*判断一个数字是否为素数*/
+		function isPrime(){
+			var c=Number(prompt("请输入一个数字"));
+			var isP=true;//默认不是素数
+			//条件：从2开始，到c-1为止--->i
+			//操作:c%i==0不是素数
+			for(var i=2;i<c/2;i++){
+				if(c%i==0){
+					isP=false;//不是素数
+					break;
+				}
+			}
+			if(isP){
+				console.log("是素数");
+				document.write("是素数");
+			}else{
+				console.log("不是素数");
+				document.write("不是素数");
+			}
+		}
+	</script>	
+ </body>
+ <button onclick="printMulti();">打印某行乘法表</button>
+ <button onclick="isPrime();">判断是否为素数</button>
+ </html>

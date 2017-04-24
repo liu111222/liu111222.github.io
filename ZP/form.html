@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<h3>HTML5表单新特性—新的表单元素</h3>
+<form action="">
+  <datalist id="dishList">
+    <option>鱼香肉丝</option>
+    <option >番茄</option>
+    <option >蛋炒饭</option>
+    <option value="">西红柿炒鸡蛋</option>
+  </datalist>
+  午餐：<input type="text"name="lunch" list="dishList" autocomplete="off"/><br/>
+  <input type="submit"/>
+</form>
+<script>
+  var timer=setInterval(function(){
+    var pro=document.getElementById("d2");
+    pro.value+=0.05;
+    if(pro.value>=1){
+     pro.value=0
+    }
+  },100);
+</script>
+</body>
+</html>
