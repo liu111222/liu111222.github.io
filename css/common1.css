@@ -265,7 +265,7 @@ a:hover{
 }
 .lt>table tr>td>div{
     width: 0;
-    transition:width 2s linear;
+
 }
 .lt>table tr>td:first-child{
     width: 75px;
@@ -359,9 +359,9 @@ a:hover{
     font-weight:bold ;
     background:#0000ff ;
 }
-/*.pro>div>p>img:hover{
+.pro>div>p>img:hover{
     transform:scale(1.4);
- }*/
+ }
 .pro>div>h3>a{
     font-size: 17px;
     color: #f60;

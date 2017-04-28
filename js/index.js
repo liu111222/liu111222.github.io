@@ -6,17 +6,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 //技能
 var skill=document.getElementById("skill");
 var d1=skill.getElementsByTagName("div")[1];
@@ -68,10 +57,10 @@ skill.onmouseover=function(){
     for(var i=0;i<d2.length;i++) {
         if (d2[i].className == "h5") {
             d2[i].style.width = "85%";
-            d2[i].tra
             d2[i].style.background = rc1();
         } else if (d2[i].className == "c3") {
             d2[i].style.width = "85%";
+            d2[i].style.transition="width 2s linear;";
             d2[i].style.background = rc2();
         } else if (d2[i].className == "js") {
             d2[i].style.width = "80%";
@@ -104,18 +93,19 @@ console.log(img);
 var i=index=0; //�м�����ͳһ������
 var play=null;
 console.log(product,pro,div,li);//��ȡ
-//ͼƬ�л������뵭��Ч�������ã�transition: opacity .s linear������,�����ᡢ�� ��css����
-function show(a){
-    for(i=0;i<li.length;i++) {
+//
+function show(a) {
+    for (i = 0; i < li.length; i++) {
         li[i].className = '';
         li[a].className = "current";
     }
-    for(i=0;i<div.length;i++){
+    for (i = 0; i < div.length; i++) {
         //console.log(div.length);
-        div[i].className="";
-        div[a].className="current";
+        div[i].className = "";
+        div[a].className = "current";
     }
-    for(var r=0;r<img.length;r++){
+}
+   /* for(var r=0;r<img.length;r++){
         img[r]=img[a];
         img[r].onmouseover=function(){
             img[a].style.width="1100px";
@@ -126,7 +116,7 @@ function show(a){
             img[a].style.height="360px";
         }
     }
-}
+}*/
 //�л���ť���ܣ���Ӧ��ӦͼƬ
 for(i=0;i<li.length;i++){
     li[i].index=i;
